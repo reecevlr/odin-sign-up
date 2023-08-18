@@ -1,9 +1,58 @@
+@font-face {
+    font-family: "Teko";
+    src: 
+        url("font/Teko-Regular.ttf"), 
+        url("font/Teko-Bold.ttf");
+}
+
 * {
     margin: 0px;
     padding: 0px;
 
     box-sizing: border-box;
     
-    /* insert default fonts */
+    font-family: 'Teko', sans-serif;
+    font-size: 1.15rem;
+    font-weight: normal;
+
     /* insert default colors */
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.left {
+    height: 100%;
+    width: 40%;
+
+    position: absolute;
+    left: 0;
+
+    background: url(img/r34-gtr.jpg);
+    background-repeat: no-repeat;
+    background-size: 780px;
+
+    color: #fff;
+}
+
+.caption {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.right {
+    height: 100%;
+    width: 60%;
+
+    position: absolute;
+    right: 0;
 }
