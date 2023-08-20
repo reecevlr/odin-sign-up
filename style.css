@@ -5,6 +5,13 @@
         url("font/Teko-Bold.ttf");
 }
 
+@font-face {
+    font-family: "Ubuntu";
+    src:
+        url("font/Ubuntu-Regular.ttf"),
+        url("font/Ubuntu-Italic.ttf");
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -26,10 +33,15 @@ a:visited {
 
 h1 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1.85rem;
+    font-size: 1.35rem;
+}
+
+button {
+    width: 150px;
 }
 
 .content {
@@ -103,19 +115,70 @@ h2 {
 }
 
 .right em {
-    font-size: 1.85rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.15rem;
+    padding: 5px;   
 }
 
 .formality {
-    padding: 35px 35px 0 35px;
-    margin-bottom: 25px;
+    padding: 35px;
+    /* margin-bottom: 25px; */
+}
+
+.formality h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.15rem;
+}
+
+.form:focus-within {
+    border-color: #1F191Aff;
 }
 
 .form {
+    border: 1px solid transparent;
+    box-shadow: 8px 6px 30px #000;
+
+    border-radius: 10px;
     padding: 35px;
+    padding-top: 0;
+
+    background-color: #fff;
+    padding: 35px;
+    margin: 0 35px; 
+}
+
+form h2 {
+    font-size: 1.65rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+form label,
+form input {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
 }
 
 .input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+
+    border-radius: 8px;
+    background-color: rgba(127, 158, 156, 0.5);
+}
+
+.submit {
+    margin-top: 20px;
+
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
