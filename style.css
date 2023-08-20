@@ -18,7 +18,9 @@
     /* insert default colors */
 }
 
-a {
+a,
+a:visited {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -38,18 +40,43 @@ h2 {
 .left {
     height: 100%;
     width: 40%;
+    color: #fff;
 
     position: absolute;
     left: 0;
 
     background: url(img/r34-gtr.jpg);
     background-repeat: no-repeat;
-    background-size: 780px;
+    background-size: cover;
 
-    color: #fff;
+    display: flex; 
+    justify-content: center;
+}
+
+.logo {
+    padding: 15px;
+    margin-top: 200px;
+    height: fit-content;
+    width: 100%;
+
+    display: flex; 
+    justify-content: center;
+
+    background-color: #000;
+    opacity: 90%;
+}
+
+.logo-icon {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(34deg) brightness(106%) contrast(101%);
 }
 
 .caption {
+    opacity: 90%;
+    margin-bottom: 10px;
     width: 100%;
 
     position: absolute;
