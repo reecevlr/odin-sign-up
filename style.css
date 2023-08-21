@@ -109,7 +109,8 @@ button {
     justify-content: center;
     gap: 30px;
 
-    background: #7f9e9c;
+    background: #000;
+    color: #E7E7E7;
 
     /* background: rgb(127,158,156);
     background: radial-gradient(circle, rgba(127,158,156,1) 0%, rgba(49,61,61,1) 51%, rgba(29,29,29,1) 97%); */
@@ -143,7 +144,7 @@ button {
     padding: 35px;
     padding-top: 0;
 
-    background-color: #fff;
+    background-color: #2E383A;
     padding: 35px;
     margin: 0 35px; 
 }
@@ -173,9 +174,12 @@ input {
     border: 2px solid transparent;
     border-radius: 8px;
     background-color: rgba(127, 158, 156, 0.5);
+    
+    transition: 0.25s;
 }
 
 input:focus {
+    background-color: ;
     border-color: #277CE0;
     outline: none;
     box-shadow: 2px 3px 10px #000;
@@ -187,8 +191,16 @@ input[type=tel]:valid {
     background-color: #C3FDB8;
 }
 
+#user-password:valid {
+    background-color: #C3FDB8;
+}
+
 .error {
-    background-color: red;
+    background-color: #FB8392;
+}
+
+.verified {
+    background-color: #C3FDB8;
 }
 
 .submit {
@@ -202,13 +214,38 @@ input[type=tel]:valid {
 }
 
 button {
-    border: none;
+    border: 3px solid #E7E7E7;
     border-radius: 8px;
 
-    padding: 4px;
+    padding: 8.5px;
     width: 200px;
+
+    color: #E7E7E7;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #E7E7E7;
+    color: #000;
+}
+
+.submit a,
+.submit p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+}
+
+.submit button {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+.submit p {
+    margin-top: 10px;
 }
 
 .submit a {
     text-decoration: underline;
+    color: #E84058;
 }
