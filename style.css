@@ -107,6 +107,7 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
 
     background: #7f9e9c;
 
@@ -169,8 +170,25 @@ input {
     padding: 5px;
     width: 100%;
 
+    border: 2px solid transparent;
     border-radius: 8px;
     background-color: rgba(127, 158, 156, 0.5);
+}
+
+input:focus {
+    border-color: #277CE0;
+    outline: none;
+    box-shadow: 2px 3px 10px #000;
+}
+
+input[type=text]:valid,
+input[type=email]:valid,
+input[type=tel]:valid {
+    background-color: #C3FDB8;
+}
+
+.error {
+    background-color: red;
 }
 
 .submit {
@@ -181,4 +199,16 @@ input {
 
     justify-content: center;
     align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+
+    padding: 4px;
+    width: 200px;
+}
+
+.submit a {
+    text-decoration: underline;
 }
